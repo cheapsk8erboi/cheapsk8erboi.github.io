@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+		<script src="scripts.js"></script>
+		<script src="prices.js"></script>
+</head>
+
+<!--HEADER-->
+<header>
+
+
+<table border="1" bgcolor="#eaeaea" width="98%" class="root">
+	<tr align="center">
+		<td >
+		The Root of the Problem
+		</td>
+	</tr>
+</table>	
+<table border="1" bgcolor="#eaeaea" width="98%" class="menu">
+	<tr align="center">
+		<td>
+		<a href="home.html"><button class="menubutton">Home</button></a>
+		</td>
+		<td>
+		<a href="ref.html"><button class="menubutton">Refrences</button></a>
+		</td>
+		<td>
+		<a href="profittree.html"><button class="menubutton">Profit Tree</button></a>
+		</td>
+		<td>
+		<a href="definitions.html"><button class="menubutton">Definitions</button></a>
+		</td>
+	</tr>	
+</table>
+
+<!--VIEWPORT-->
+
+<table border="1" width="98%" class="viewport">
+	<tr align="center">
+		<td>
+			 <div id="chgtext" >Cick an item to get more information</div>
+		</td>
+	</tr>	
+</table>
+
+</header>
+
+<!--BODY-->
+
+<body class="treebody">	
+    <div class="container" align="center">
+		<ul id="tree-data" style="display:none">
+			<li id="root" alt="root" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='An exploration into life under a capitalist system';">
+				Click to begin
+				<hr>
+				<span>&#9660;</span>
+				<ul>
+					<li id="node1"  class="collapsed" onclick="document.getElementById('chgtext').innerHTML='includes all neccessities vital to human survival. The bare minimum.';">
+						Vital Necessities<div></div>
+						(survival minimum)
+						<hr>
+						<cost class="VitalPrice"></cost>
+						<hr>
+						<ul>
+							<li id="node1-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Air';">
+							Air
+								<ul>
+								<li  id="node1-1-1" class="collapsed neg last" onclick="document.getElementById('chgtext').innerHTML='air pollution';">
+								<font color="red">air pollution</font>
+								</li>
+								</ul>
+							</li>
+							<li id="node1-2"  class="collapsed" onclick="document.getElementById('chgtext').innerHTML='water';">
+							Water
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="WaterPrice"></cost>
+							<hr>
+								<ul>
+								<li id="node1-2-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='accesable natural source';">
+								accesable natural source
+									<ul>
+									<li id="node1-2-1-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Surface / ground water';">
+									Surface / ground water
+										<ul>
+										<li  id="node1-2-1-1-1" class="collapsed neg last" onclick="document.getElementById('chgtext').innerHTML='water pollution';">
+										<font color="red">water pollution</font>
+										</li>
+										</ul>
+									</li>
+									<li id="node1-2-1-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='rain / condensation';">
+									rain / condensation
+										<ul>
+										<li  id="node1-1-1" class="collapsed neg last" onclick="document.getElementById('chgtext').innerHTML='air pollution';">
+										<font color="red">air pollution</font>
+										</li>
+										</ul>										
+									</li>
+									</ul>
+								</li>
+								<li id="node1-2-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Publice / Government source';">
+								Publice / Government source
+									<ul>
+									<li id="node1-2-2-1" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='waste / grey water recycling';">
+									waste / grey water recycling
+									</li>
+									</ul>
+								</li>
+								</ul>
+							</li>
+							<li id="node1-3" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Food';">
+							Food
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="FoodPrice"></cost>
+							<hr>
+							</li>
+						</ul>
+					</li>					
+					<li id="node2" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Things that are not vital to survival. But are required to live, at the bare minimum of comfort';">
+						Critical Necessities
+						<hr>
+						<cost class="CriticalPrice"></cost>
+						<hr>
+						<ul>
+							<li id="node2-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Shelter';">
+							Shelter
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="ShelterPrice"></cost>
+							<hr>
+							</li>
+							<li id="node2-2" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Electricity';">
+							Electricity
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="ElectricityPrice"></cost>
+							<hr>
+							</li>
+							<li id="node2-3" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Natural Gas';">
+							Natural Gas
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="NaturalGasPrice"></cost>
+							<hr>
+							</li>
+						</ul>
+					</li>
+					<li id="node3"  class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Living minimum is distinct from the survival minimum. Living minimum includes not only vital neccessities, but necessities concidered crucial for a fulfilling life.';">
+						Quality of Life Necessities<div></div>
+						(living minimum)
+						<hr>
+						A.M.C.:<div></div>
+						<cost class="QualityPrice"></cost>
+						<hr>
+						<ul>
+							<li id="node3-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Healthcare';">
+							Healthcare
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="HealthcarePrice"></cost>
+							<hr>
+							</li>
+							<li id="node3-2" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Clothing';">
+							Clothing
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="ClothingPrice"></cost>
+							<hr>
+							</li>
+							<li id="node3-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Education';">
+							Education
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="EducationPrice"></cost>
+							<hr>
+							</li>
+						</ul>
+					</li>
+					<li id="node4"  class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Things that are only needed, due to the structure of the current system.';">
+						Sturctural Necessities
+						<hr>
+							A.M.C.:<div></div>
+							<cost class="StructuralPrice"></cost>
+							<hr>
+						<ul>
+							<li id="node4-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Motor Vehicle';">
+							Motor Vehicle
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="MotorVehiclePrice"></cost>
+							<hr>
+							</li>
+							<li id="node4-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Internet Access';">
+							Internet Access
+							<hr>
+							A.M.C.:<div></div>
+							<cost class="InternetPrice"></cost>
+							<hr>
+							</li>
+						</ul>
+					</li>
+					<li id="node5"  class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Having more than you need to simply live. Disposable income you can use to experience base level luxuries.';">
+						Comfort
+						<ul>
+							<li id="node5-1" class="" onclick="document.getElementById('chgtext').innerHTML='5-1';">
+							5-1								
+							</li>
+							<li id="node5-2"   class="collapsed  last" onclick="document.getElementById('chgtext').innerHTML='5-2';">
+							5-2
+							</li>
+						</ul>
+					</li>				
+					<li id="node6" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Having everything you could need, or want at a whim. Enough disposable income to experience the best version of all things.';">
+						Luxury
+						<ul>
+							<li id="node6-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Vacation / vacation homes';">
+							Vacation / vacation homes
+							</li>
+							<li id="node6-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Collection of a comfort / neccessity item';">
+							Collection of a comfort / neccessity item
+							</li>
+						</ul>
+					</li>
+					<li id="node7"  class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Hoarding more than is needed to live in luxury. More than any person could even make use of, outside of accumilating more wealth.';">
+						Excess
+						<ul>
+							<li id="node7-1" class="collapsed" onclick="document.getElementById('chgtext').innerHTML='Rental Property';">
+							Rental Property
+							</li>
+							<li id="node7-2" class="collapsed last" onclick="document.getElementById('chgtext').innerHTML='Political Capital';">
+							Political Capital
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div id="tree-view"></div>		
+	</div>
+	</body>
+
+<footer class="fixed-bottom">
+
+<table border="1" bgcolor="#eaeaea">
+	<tr>
+		<td>
+		<button class="menubutton" onClick="toggleTable()"><span>&#128273;</span></button>
+			<table id="myTable" class="hidden">
+				<tr align="left">
+					<th><small>All prices are calculated by month</small></th>
+				</tr>
+				<tr><th><hr></th></tr>				
+				<tr align="left">				
+					<th><small>A.M.C. = Average Monthly Cost</small></th>
+				</tr>
+				<tr><th><hr></th></tr>	
+				<tr align="left">				
+					<th><small><font color="red">Red text</font> = An external effect that complicates the acquisition of a given item.</small></th>
+				</tr>
+			</table>
+		</td>
+	</tr>	
+</table>
+
+<table border="1" bgcolor="#eaeaea" width="98%">
+	<tr>
+		<td>
+		Average monthly income on federal minimum wage: <cost class="MonthlyMinimumWage"></cost>
+		</td>
+		<td>
+		Average monthly cost to live to a <a href="definitions.html">minimum standard:</a> <cost class="QOLCost"></cost>
+		</td>
+		<td>
+		Hourly pay required reach minimum standard: <cost class="HourlyQOLPay"></cost>
+		</td>
+	</tr>
+</table>	
+</footer>
+</html>
