@@ -1,0 +1,414 @@
+.container { max-width:960px; 
+margin:150px auto;
+}
+
+a {
+	text-decoration: none !important;
+	height: auto;
+    font-family: Georgia, serif; 
+	color: #474669;
+    overflow-x: hidden; 
+}
+
+a:hover {
+	text-shadow: 1px 1px 5px green;
+}
+ 
+.ref-link {
+            cursor: help;
+        }
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 15;
+}
+
+.fixedbody { 
+    font-family: Georgia, serif; 
+	color: #000;
+	background: rgb(255,255,255);
+	background: linear-gradient(169deg, rgba(255,255,255,1) 43%, rgba(194,194,194,1) 100%);
+	background-attachment: fixed;
+	margin-top: 0px;	
+} 
+		
+.treebody { 
+	height: auto;
+    font-family: Georgia, serif; 
+	color: #000;
+    overflow-x: hidden;
+	overflow: hidden;	
+	background: rgb(255,255,255);
+	background: linear-gradient(169deg, rgba(255,255,255,1) 43%, rgba(194,194,194,1) 100%);
+	background-attachment: fixed;
+} 
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;	
+	z-index: 15;
+}
+.master {
+	Position: fixed;
+	width: 100%;
+}	
+
+.root {
+	font-size: 24px;
+	font-family: Georgia, serif;
+    overflow-x: hidden; 
+	background-color: #348938;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	border-collapse: collapse;
+	box-shadow: 1px 1px 3px #fff inset,-1px -1px 3px #000 inset;
+}
+
+.viewport {
+	font-size: 16px;
+	font-family: Georgia, serif;
+	background: rgb(255,255,255);
+	background: linear-gradient(169deg, rgba(255,255,255,1) 15%, rgba(138,138,138,1) 100%);	
+	border-collapse: collapse;
+	min-height: 40px;
+}	
+
+.menu {
+    font-family: Georgia, serif;
+	border-collapse: collapse;
+}
+
+.hidden {
+  display: none;
+}
+
+.menubutton {
+	font-size: 16px;
+	font-family: Georgia, serif;
+	width: 100%;
+	box-shadow: -1px -1px 3px gray inset;
+}
+	
+.menubutton:hover {
+	text-shadow: 1px 1px 5px green;
+	cursor: pointer;
+}
+
+.def {
+  font-size: 16px;
+  border-spacing: 2px;
+  border-width: 6px;
+  border-color: green;
+  height: 100%;
+}
+
+
+/* auto scroll styles */
+/* ------------------ */
+
+
+ 
+.scroll-container { 
+    position: relative; 
+    width: 300px; /* Set the width of the scroll area */ 
+    overflow: hidden; 
+} 
+ 
+.scroll-content { 
+    display: flex; 
+    transition: transform 0.3s ease; 
+} 
+ 
+.item { 
+    min-width: 100px; /* Set a minimum width for items */ 
+    padding: 20px; 
+    background: #007BFF; 
+    color: white; 
+    margin-right: 10px; 
+    text-align: center; 
+} 
+ 
+.scroll-edge { 
+    position: absolute; 
+    top: 0; 
+    width: 30px; /* Width of the hover area */ 
+    height: 100%; 
+    z-index: 1; 
+} 
+ 
+.scroll-edge.left { 
+    left: 0; 
+} 
+ 
+.scroll-edge.right { 
+    right: 0; 
+} 
+
+/* --------------- */
+/* jquerysctipttop */
+/* --------------- */
+
+#jquery - script - menu {
+    position: fixed;
+    height: 90px;
+    width: 100 % ;
+    top: 0;
+    left: 0;
+    border - top: 5px solid #316594;
+    background: #fff;
+    -moz - box - shadow: 0 2px 3px 0 rgba(0, 0, 0, .16);
+    -webkit - box - shadow: 0 2px 3px 0 rgba(0, 0, 0, .16);
+    box - shadow: 0 2px 3px 0 rgba(0, 0, 0, .16);
+    z - index: 999999;
+    padding: 10px 0;
+    -webkit - box - sizing: content - box;
+    -moz - box - sizing: content - box;
+    box - sizing: content - box
+}
+.jquery - script - center {
+    max - width: 960px;
+    margin: 0 auto
+}
+.jquery - script - center ul {
+    width: 212px;
+    float: left;
+    line - height: 45px;
+    margin: 0;
+    padding: 0;
+    list - style: none
+}
+.jquery - script - center a {
+    text - decoration: none
+}
+.jquery - script - ads {
+    max - width: 728px;
+    height: 90px;
+    float: right
+}
+.jquery - script - clear {
+    clear: both;
+    height: 0
+}
+#carbonads {
+    display: block;
+    overflow: hidden;
+    max - width: 728px;
+    position: relative;
+    font - size: 22px;
+    box - sizing: content - box
+}
+#carbonads > span {
+    display: block
+}
+#carbonads a {
+    color: #4078c0;
+    text - decoration: none
+}
+#carbonads a: hover {
+    color: #3664a3
+}
+.carbon - wrap {
+    display: flex;
+    align - items: center
+}
+.carbon - img {
+    display: block;
+    margin: 0;
+    line - height: 1
+}
+.carbon - img img {
+    display: block;
+    height: 90px;
+    width: auto
+}
+.carbon - text {
+    display: block;
+    padding: 0 1em;
+    line - height: 1.35;
+    text - align: left
+}
+.carbon - poweredby {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 6px 10px;
+    text - align: center;
+    text - transform: uppercase;
+    letter - spacing: .5px;
+    font - weight: 600;
+    font - size: 8px;
+    border - top - left - radius: 4px;
+    line - height: 1;
+    color: #aaa!important
+}
+ @ media only screen and(min - width: 320px)and(max - width: 759px) {
+    .carbon - text {
+        font - size: 14px
+    }
+}
+ @ media only screen and(max - width: 1023px) {
+    .jquery - script - ads {
+        display: none
+    }
+}
+
+/* -------- */
+/* orgchart */
+/* -------- */
+
+
+
+/* Horizontal drawing (default) styles */
+
+/* Draw the lines */
+.jOrgChart .line {
+	height: 20px;
+	width: 1px;
+}
+
+.jOrgChart .down {
+	background-color: black;	
+	margin: 0px auto;
+}
+
+.jOrgChart .top {
+	border-top: 1px solid black;
+}
+
+.jOrgChart .left {
+	border-right: 1px solid white;
+}
+
+.jOrgChart .right {
+	border-left: 1px solid black;
+}
+
+/* node cell */
+.jOrgChart td {
+	text-align: center;
+	vertical-align: top;
+	padding: 0;
+}
+
+/* The node */
+
+.jOrgChart .node.selected {
+	background: rgb(255,255,255);
+	background: linear-gradient(169deg, rgba(255,255,255,1) 15%, rgba(138,138,138,1) 100%) !important;
+	border: 1px dotted black;
+	box-shadow: 5px 5px 20px white inset, 5px 5px 10px black;
+}
+
+.jOrgChart .node:hover {
+	text-shadow: 1px 1px 5px green;
+}
+
+.jOrgChart .node {
+	border: solid 1px black;
+	background: #eaeaea;
+	display: inline-block;
+	width: 100px; 		/* vertical type node width */
+	min-height: 60px;	/* vertical type node min-height */
+	z-index: 10;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+.jOrgChart .node neg {
+	border: solid 1px black;
+	background: #000;
+	display: inline-block;
+	width: 100px; 		/* vertical type node width */
+	min-height: 60px;	/* vertical type node min-height */
+	z-index: 10;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+.jOrgChart .node .neg {
+	border: solid 1px black;
+	background: red;
+	display: inline-block;
+}
+
+
+/* support vertical draw child nodes */
+.jOrgChart .node.vertical { 
+	float: left;
+}
+
+.jOrgChart .cover {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	margin-top: -6px;
+	margin-left: -5px;
+}
+
+/* Vertical drawing styles */
+
+.jOrgChart .multi-tree { 
+	margin: 0; 
+	float: left;
+}
+
+.jOrgChart .multi-tree .content {
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	border: 1px solid black; 
+	width: 100px;		/* horizontal type node width */
+	min-height: 60px;	/* horizontal type node min-height */
+	cursor: pointer;
+}
+
+.jOrgChart .multi-tree .selected {
+	background-color: #3399FF !important;
+	border: 1px dotted black;
+}
+
+.jOrgChart .multi-tree span {
+	width: 109px;
+	text-decoration: none;
+	display: block;
+	margin: 0 0 0 1.2em;
+	padding-top: 10px;
+	background-color: transparent;
+	border: solid black;   
+	border-width: 0 0 1px 1px;
+}
+
+.jOrgChart .multi-tree span .content  {
+	display: block; 
+	position: relative;
+	top: .95em;
+	background-color: #fff;
+	margin: 0 0 .2em .7em;
+	padding: 0;
+}
+
+.jOrgChart .multi-tree ul, .multi-tree li {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jOrgChart .multi-tree ul li {
+	line-height: 1.2em;
+}
+
+.jOrgChart .multi-tree ul li ul li {
+	margin: 0 0 0 1.2em;
+	border-left: 1px solid black; /* vertical node connector line */
+}
+
+/* if node is last then need to remove left connector */
+.jOrgChart .multi-tree li.last ul li {
+	border: none;
+}
